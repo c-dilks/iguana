@@ -116,7 +116,7 @@ jobs:
           case ${{ steps.key.outputs.root_version }} in
             latest)
               curl --request GET \
-                --url https://api.github.com/repos/root-project/ROOT/releases/latestt \
+                --url https://api.github.com/repos/root-project/ROOT/releases/latest \
                 --header "Accept: application/vnd.github+json" \
                 --header "X-GitHub-Api-Version: 2022-11-28" \
                 --fail-with-body |\
